@@ -11,7 +11,8 @@ public class Meal {
 	
 	public void showItems() {
 		for (Item item:items) {
-			System.out.printf("Item : {0}, packing : {1}, price : {2}", item.name(), item.packing().packing(), item.price());
+			System.out.printf("Item : %s, packing : %s, price :%.2f", item.name(), item.packing().packing(), item.price());
+			System.out.println();
 		}
 	}
 	
