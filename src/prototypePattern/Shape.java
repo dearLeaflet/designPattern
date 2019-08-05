@@ -7,7 +7,7 @@ package prototypePattern;
  * @author Administrator
  *
  */
-public abstract class Shape implements Cloneable {
+abstract class BaseShape implements Cloneable {
 	private String idString;
 	protected String typeString;
 	
@@ -24,7 +24,7 @@ public abstract class Shape implements Cloneable {
 	public String getIdString() {
 		return idString;
 	}
-	
+	@Override
 	public Object clone() {
 		Object object = null;
 		try {

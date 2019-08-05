@@ -14,7 +14,7 @@ public class PrototypeDemo {
 	 */
 	public static void main(String[] args) {
 		ShapCach.shapeLoad();
-		Shape shape = ShapCach.getShape("0");
+		BaseShape shape = ShapCach.getShape("0");
 		shape.draw();
 	}
 

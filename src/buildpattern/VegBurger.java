@@ -7,7 +7,7 @@ package buildpattern;
  * @author Administrator
  *
  */
-public class VegBurger extends Burger{
+public class VegBurger extends BaseBurger{
 
 	@Override
 	public String name() {

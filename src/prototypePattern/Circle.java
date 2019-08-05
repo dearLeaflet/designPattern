@@ -7,9 +7,9 @@ package prototypePattern;
  * @author Administrator
  *
  */
-public class Circle extends Shape{
+public class Circle extends BaseShape{
 
-	public void Cicle() {
+	public Circle() {
 		typeString = "Circle";
 	}
 	

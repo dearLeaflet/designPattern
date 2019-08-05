@@ -7,7 +7,7 @@ package buildpattern;
  * @author Administrator
  *
  */
-public abstract class ColdDrink implements Item {
+abstract class BaseColdDrink implements Item {
 
 	@Override
 	public Packing packing() {

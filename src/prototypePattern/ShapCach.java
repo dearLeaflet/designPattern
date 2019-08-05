@@ -10,23 +10,23 @@ import java.util.Hashtable;
  *
  */
 public class ShapCach {
-	private static Hashtable<String, Shape> shapMapHashtable = new Hashtable<String, Shape>();
+	private static Hashtable<String, BaseShape> shapMapHashtable = new Hashtable<String, BaseShape>();
 	
-	public static Shape getShape(String shapeID) {
-		Shape shape = shapMapHashtable.get(shapeID);
-		return (Shape) shape.clone();
+	public static BaseShape getShape(String shapeId) {
+		BaseShape shape = shapMapHashtable.get(shapeId);
+		return (BaseShape) shape.clone();
 	}
 	
 	public static void shapeLoad() {
-		Shape circleShape = new Circle();
+		BaseShape circleShape = new Circle();
 		circleShape.setIdString("0");
 		shapMapHashtable.put(circleShape.getIdString(), circleShape);
 		
-		Shape squareShape = new Square();
+		BaseShape squareShape = new Square();
 		squareShape.setIdString("1");
 		shapMapHashtable.put("1", squareShape);
 		
-		Shape rectangleShape = new Rectangle();
+		BaseShape rectangleShape = new Rectangle();
 		rectangleShape.setIdString("2");
 		shapMapHashtable.put("2", rectangleShape);
 	}

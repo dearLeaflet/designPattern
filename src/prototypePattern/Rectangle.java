@@ -7,7 +7,7 @@ package prototypePattern;
  * @author Administrator
  *
  */
-public class Rectangle extends Shape {
+public class Rectangle extends BaseShape {
 	public Rectangle() {
 		 typeString = "Rectangle";
 	}

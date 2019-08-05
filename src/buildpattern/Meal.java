@@ -1,7 +1,11 @@
 package buildpattern;
 
 import java.util.ArrayList;
-
+/**
+ * 
+ * @author Administrator
+ *
+ */
 public class Meal {
 	private ArrayList<Item> items = new ArrayList<Item>();
 	

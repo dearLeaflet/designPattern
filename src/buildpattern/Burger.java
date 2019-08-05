@@ -1,6 +1,10 @@
 package buildpattern;
-
-public abstract class Burger implements Item {
+/**
+ * 
+ * @author Administrator
+ *
+ */
+abstract class BaseBurger implements Item {
 
 	@Override
 	public Packing packing() {
